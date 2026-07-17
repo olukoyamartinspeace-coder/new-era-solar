@@ -52,6 +52,7 @@
   --color-error-container: #93000a;
   --color-secondary-container: #feb700;
   --color-surface: #131314;
+  --color-error: #ffb4ab;
   --font-family-headline: Montserrat, sans-serif;
   --font-family-body: Inter, sans-serif;
 }

@@ -1,7 +1,34 @@
 "use client";
 import { useEffect } from "react";
+import { useForm } from "react-hook-form";
+
+type QuoteForm = {
+  fullName: string;
+  email: string;
+  serviceType: string;
+  message: string;
+};
 
 export default function ContactPage() {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitSuccessful },
+  } = useForm<QuoteForm>({
+    defaultValues: {
+      fullName: "",
+      email: "",
+      serviceType: "Residential Solar Installation",
+      message: "",
+    },
+  });
+
+  const onSubmit = (data: QuoteForm) => {
+    console.log("Quote request:", data);
+    reset();
+  };
+
   useEffect(() => {
     document.querySelectorAll("input, select, textarea").forEach((input) => {
       input.addEventListener("focus", () => {
@@ -54,20 +81,43 @@ export default function ContactPage() {
         <div className="max-w-[1280px] mx-auto px-4 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div className="bg-surface-elevated p-12 md:p-10 rounded-xl border border-surface-stroke">
             <h2 className="font-[family-name:var(--font-family-headline)] text-3xl md:text-[48px] leading-[56px] tracking-[-0.01em] font-bold mb-6 text-on-surface">Get a Quote</h2>
-            <form className="space-y-6">
+            {isSubmitSuccessful && (
+              <div className="mb-6 bg-secondary/10 border border-secondary/40 text-secondary px-4 py-3 rounded-lg text-[14px]">
+                Thank you! Your request has been received. We&apos;ll respond within 24 hours.
+              </div>
+            )}
+            <form className="space-y-6" onSubmit={handleSubmit(onSubmit)} noValidate>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold text-on-surface-variant">Full Name</label>
-                  <input className="w-full bg-background border border-surface-stroke rounded-lg px-4 py-3 text-on-surface focus:border-solar-glow focus:ring-1 focus:ring-solar-glow transition-all outline-none" placeholder="John Doe" type="text" />
+                  <input
+                    className={`w-full bg-background border rounded-lg px-4 py-3 text-on-surface focus:ring-1 transition-all outline-none ${errors.fullName ? "border-error" : "border-surface-stroke focus:border-solar-glow focus:ring-solar-glow"}`}
+                    placeholder="John Doe"
+                    type="text"
+                    {...register("fullName", { required: "Please enter your name" })}
+                  />
+                  {errors.fullName && <p className="text-error text-[12px]">{errors.fullName.message}</p>}
                 </div>
                 <div className="space-y-2">
                   <label className="font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold text-on-surface-variant">Email Address</label>
-                  <input className="w-full bg-background border border-surface-stroke rounded-lg px-4 py-3 text-on-surface focus:border-solar-glow focus:ring-1 focus:ring-solar-glow transition-all outline-none" placeholder="john@example.com" type="email" />
+                  <input
+                    className={`w-full bg-background border rounded-lg px-4 py-3 text-on-surface focus:ring-1 transition-all outline-none ${errors.email ? "border-error" : "border-surface-stroke focus:border-solar-glow focus:ring-solar-glow"}`}
+                    placeholder="john@example.com"
+                    type="email"
+                    {...register("email", {
+                      required: "Please enter your email",
+                      pattern: { value: /^\S+@\S+\.\S+$/, message: "Enter a valid email" },
+                    })}
+                  />
+                  {errors.email && <p className="text-error text-[12px]">{errors.email.message}</p>}
                 </div>
               </div>
               <div className="space-y-2">
                 <label className="font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold text-on-surface-variant">Service Type</label>
-                <select className="w-full bg-background border border-surface-stroke rounded-lg px-4 py-3 text-on-surface focus:border-solar-glow focus:ring-1 focus:ring-solar-glow transition-all outline-none appearance-none">
+                <select
+                  className="w-full bg-background border border-surface-stroke rounded-lg px-4 py-3 text-on-surface focus:border-solar-glow focus:ring-1 focus:ring-solar-glow transition-all outline-none appearance-none"
+                  {...register("serviceType")}
+                >
                   <option>Residential Solar Installation</option>
                   <option>Commercial Energy Systems</option>
                   <option>Energy Audit</option>
@@ -77,9 +127,17 @@ export default function ContactPage() {
               </div>
               <div className="space-y-2">
                 <label className="font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold text-on-surface-variant">Your Message</label>
-                <textarea className="w-full bg-background border border-surface-stroke rounded-lg px-4 py-3 text-on-surface focus:border-solar-glow focus:ring-1 focus:ring-solar-glow transition-all outline-none" placeholder="Tell us about your project..." rows={4}></textarea>
+                <textarea
+                  className={`w-full bg-background border rounded-lg px-4 py-3 text-on-surface focus:ring-1 transition-all outline-none ${errors.message ? "border-error" : "border-surface-stroke focus:border-solar-glow focus:ring-solar-glow"}`}
+                  placeholder="Tell us about your project..."
+                  rows={4}
+                  {...register("message", { required: "Please add a short message" })}
+                ></textarea>
+                {errors.message && <p className="text-error text-[12px]">{errors.message.message}</p>}
               </div>
-              <button className="w-full bg-secondary-container text-on-secondary-container font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold py-4 rounded-lg flex items-center justify-center gap-2 hover:opacity-90 transition-all active:scale-[0.98]" type="submit">Request Consultation <span className="material-symbols-outlined">arrow_forward</span></button>
+              <button className="w-full bg-secondary-container text-on-secondary-container font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold py-4 rounded-lg flex items-center justify-center gap-2 hover:opacity-90 transition-all active:scale-[0.98]" type="submit">
+                Request Consultation <span className="material-symbols-outlined">arrow_forward</span>
+              </button>
             </form>
           </div>
           <div className="h-full min-h-[400px] lg:min-h-full rounded-xl overflow-hidden relative border border-surface-stroke">

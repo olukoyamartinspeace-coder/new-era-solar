@@ -60,6 +60,12 @@ export default function Header() {
             Products
           </Link>
           <Link
+            href="/calculator"
+            className="font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold text-on-surface-variant hover:text-on-surface transition-colors duration-300"
+          >
+            Calculator
+          </Link>
+          <Link
             href="/contact"
             className="font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold text-on-surface-variant hover:text-on-surface transition-colors duration-300"
           >

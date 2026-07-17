@@ -47,7 +47,7 @@ export default function ProjectsPage() {
           {projects.map((project, i) => (
             <div key={i} className={`${project.cols} group project-card relative overflow-hidden rounded-xl bg-surface-elevated border border-surface-stroke cursor-pointer reveal ${i > 0 ? `stagger-${(i % 3) + 1}` : ""}`} data-category={project.category}>
               <div className="aspect-[16/9] w-full relative overflow-hidden">
-                <img className="w-full h-full object-cover" alt={project.title} src={project.img} />
+                <img className="w-full h-full object-cover" alt={project.title} src={project.img}  loading="lazy" />
               </div>
               <div className="p-6 flex justify-between items-center bg-surface-elevated/90 backdrop-blur-md absolute bottom-0 left-0 right-0">
                 <div>
@@ -64,7 +64,7 @@ export default function ProjectsPage() {
         <div className="group project-card relative overflow-hidden rounded-xl bg-surface-elevated border border-surface-stroke cursor-pointer">
           <div className="flex flex-col md:flex-row h-full">
             <div className="md:w-3/5 h-80 md:h-96 relative overflow-hidden">
-              <img className="w-full h-full object-cover" alt="Green Mall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmvVvkrKBvBSzDwQbYCs3PPogK0cuJ2VMtGyc_7iP9FpjrU4KwZWUrfLZQYZ8f58ohL2UOCK82Bg8Gs6KfWp_9RILyDEjeTrxIKrNmBn0vraeBUivGQj0YOHi9-dWiGZILYtRQFwfSk7m0Hm7Gb_Cn6HXJrHB6F0kqqgjsDj2CU6dus3vmnrYIO1P-14ZL7yCAsUZgtAIrdfgYV9uufbx15Cq2KHvlH4mF4rIv9BT6vxs7F2k_4H7cfg" />
+              <img className="w-full h-full object-cover" alt="Green Mall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmvVvkrKBvBSzDwQbYCs3PPogK0cuJ2VMtGyc_7iP9FpjrU4KwZWUrfLZQYZ8f58ohL2UOCK82Bg8Gs6KfWp_9RILyDEjeTrxIKrNmBn0vraeBUivGQj0YOHi9-dWiGZILYtRQFwfSk7m0Hm7Gb_Cn6HXJrHB6F0kqqgjsDj2CU6dus3vmnrYIO1P-14ZL7yCAsUZgtAIrdfgYV9uufbx15Cq2KHvlH4mF4rIv9BT6vxs7F2k_4H7cfg"  loading="lazy" />
             </div>
             <div className="md:w-2/5 p-12 flex flex-col justify-center bg-surface-container-high">
               <span className="text-secondary font-[family-name:var(--font-family-body)] text-[12px] leading-[16px] font-semibold mb-2 block tracking-[0.2em]">CASE STUDY</span>

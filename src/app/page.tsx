@@ -153,8 +153,7 @@ export default function HomePage() {
               <img
                 alt="Solar Installation Professional"
                 className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg8JLqFRp-NvOcKCe6ES2PAPGqrbLUygE7Wgqi3Xc2SgH9HTSJ55gBvifFpEtAxe9I8apTQXUpeQtL04cE-IcIU90qoCgsoJ0CSy_ZUmShdCtii8_KwkKVQGyt3-749WLue1-SOtp2KnZx7VYHL1iPYQybeU3U2LQoPV8ee8T2O9dPnmH8M0V9odtket6fGSaCOcJw_CC87LUKcALBvR_OPfIj_gvhHpYQ52luaVa5Gs4BS0Suia1nLw"
-              />
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg8JLqFRp-NvOcKCe6ES2PAPGqrbLUygE7Wgqi3Xc2SgH9HTSJ55gBvifFpEtAxe9I8apTQXUpeQtL04cE-IcIU90qoCgsoJ0CSy_ZUmShdCtii8_KwkKVQGyt3-749WLue1-SOtp2KnZx7VYHL1iPYQybeU3U2LQoPV8ee8T2O9dPnmH8M0V9odtket6fGSaCOcJw_CC87LUKcALBvR_OPfIj_gvhHpYQ52luaVa5Gs4BS0Suia1nLw" loading="lazy" />
               <div className="absolute bottom-6 left-6 bg-background/90 backdrop-blur-md p-6 rounded-xl border border-surface-stroke max-w-[240px]">
                 <p className="text-secondary font-[family-name:var(--font-family-headline)] text-[48px] mb-1">
                   10+
@@ -321,8 +320,7 @@ export default function HomePage() {
             <img
               alt="Skyview Estate Solar"
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtM6IbdxWyCoc3nXQ7C06sVlbhATw36A4X8BBlvwT2eziYwbwoZYojX04dVkpeN-eBcAzRPQ9GlySYED1zqh7y9L3UtcUn8PNshGjzDZXfmjRHqjLQZEmW2dO4-asH7PSDKBeHLrRkdd8_rMYshfC-0OXOxhM9UyIch7YAdA5HhwlFio14urNtTHhD8Xl4ZWc8bbAvTwe7W4GmQrOz0t9Wf5ybyUmigjp14Ges07788aBRNQrOv9XbJw"
-            />
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtM6IbdxWyCoc3nXQ7C06sVlbhATw36A4X8BBlvwT2eziYwbwoZYojX04dVkpeN-eBcAzRPQ9GlySYED1zqh7y9L3UtcUn8PNshGjzDZXfmjRHqjLQZEmW2dO4-asH7PSDKBeHLrRkdd8_rMYshfC-0OXOxhM9UyIch7YAdA5HhwlFio14urNtTHhD8Xl4ZWc8bbAvTwe7W4GmQrOz0t9Wf5ybyUmigjp14Ges07788aBRNQrOv9XbJw" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-8 flex flex-col justify-end">
               <span className="text-secondary text-[14px] leading-[20px] tracking-[0.05em] font-semibold mb-2">
                 Luxury Residential
@@ -336,8 +334,7 @@ export default function HomePage() {
             <img
               alt="Industrial Solar Hub"
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx6fDh_4xBvBf1HfsIvHRMzfoQgrTHCLOOY8W-SNVUGJxWFToRLI6OXLIdbTIZBc801RVmNTp8vo1aDt3a2_cRLB8ZN8oaOxGzoH_7nMW675dfMDcb4FUgOlFDI3O9QpkRw57zNwEXVwJeLi2-p1FRiZIHlGLPaz76K7qTUDjvNVCAC2hAOMNBBH7aU05r9D4XCI2ZpI4b_RIT7JB4eAhpud8TAGIfUiqOEe_V4AyOE6JeeSqlYhbaVw"
-            />
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx6fDh_4xBvBf1HfsIvHRMzfoQgrTHCLOOY8W-SNVUGJxWFToRLI6OXLIdbTIZBc801RVmNTp8vo1aDt3a2_cRLB8ZN8oaOxGzoH_7nMW675dfMDcb4FUgOlFDI3O9QpkRw57zNwEXVwJeLi2-p1FRiZIHlGLPaz76K7qTUDjvNVCAC2hAOMNBBH7aU05r9D4XCI2ZpI4b_RIT7JB4eAhpud8TAGIfUiqOEe_V4AyOE6JeeSqlYhbaVw" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-8 flex flex-col justify-end">
               <span className="text-secondary text-[14px] leading-[20px] tracking-[0.05em] font-semibold mb-2">
                 Commercial
@@ -351,8 +348,7 @@ export default function HomePage() {
             <img
               alt="Hybrid Carport"
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwwPM-_akic0ik08p1ucyMk1Yg0A8jewsGgpvT4tU0eBNqvYa9PDcU6ZGKJyOl9JTIkQaab6Gv15JW_GCD9PR0i1H2N3DIGZ-DvhT6j2SP_sRXoDggKLYcqwikqP2Z9gcmXoXAuXTwjTCFnviedwwu4sfDzAL-zy2fp7EzFWIzA4R9tfKj-TD8NP8pJia45Sm7xckaa3-qBjWr8f5b30P81LJnjIWQEftgRwM7woV0ilxTSnU1U0cSAg"
-            />
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwwPM-_akic0ik08p1ucyMk1Yg0A8jewsGgpvT4tU0eBNqvYa9PDcU6ZGKJyOl9JTIkQaab6Gv15JW_GCD9PR0i1H2N3DIGZ-DvhT6j2SP_sRXoDggKLYcqwikqP2Z9gcmXoXAuXTwjTCFnviedwwu4sfDzAL-zy2fp7EzFWIzA4R9tfKj-TD8NP8pJia45Sm7xckaa3-qBjWr8f5b30P81LJnjIWQEftgRwM7woV0ilxTSnU1U0cSAg" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-end">
               <span className="text-secondary text-[14px] leading-[20px] tracking-[0.05em] font-semibold mb-1 text-sm">
                 Smart Charging
@@ -364,8 +360,7 @@ export default function HomePage() {
             <img
               alt="Lithium Bank"
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9adhIpeRa5fJTZtE90ykm91ZS71C2y2sMiuScT4csvxeWtG0K5WrZcuid5pwfwJ6QOYMKKAGFjWQUDK1JqRdVDgd_eDnp1hfnQlao0BPQB42Qoo0dNxjpAAxUuOclomLhjQMQ3DtKGb5aJO-1XseQ8q9zxQNltHEFwGH-UiOXxFH-hvywd9KUGiUr5wvp8RY5T3CjjzcArsRqEAIeJIJfXU7tNT0T3Ybbcsak8AgsrwdzeFgVgC4Z0g"
-            />
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9adhIpeRa5fJTZtE90ykm91ZS71C2y2sMiuScT4csvxeWtG0K5WrZcuid5pwfwJ6QOYMKKAGFjWQUDK1JqRdVDgd_eDnp1hfnQlao0BPQB42Qoo0dNxjpAAxUuOclomLhjQMQ3DtKGb5aJO-1XseQ8q9zxQNltHEFwGH-UiOXxFH-hvywd9KUGiUr5wvp8RY5T3CjjzcArsRqEAIeJIJfXU7tNT0T3Ybbcsak8AgsrwdzeFgVgC4Z0g" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-end">
               <span className="text-secondary text-[14px] leading-[20px] tracking-[0.05em] font-semibold mb-1 text-sm">
                 Off-Grid

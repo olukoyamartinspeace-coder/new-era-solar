@@ -65,12 +65,6 @@ export default function Header() {
           >
             Calculator
           </Link>
-          <Link
-            href="/contact"
-            className="font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold text-on-surface-variant hover:text-on-surface transition-colors duration-300"
-          >
-            Contact
-          </Link>
         </div>
         <button className="bg-secondary text-on-secondary px-6 py-2.5 font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold rounded-lg hover:scale-105 active:scale-95 transition-all shimmer">
           Get a Quote

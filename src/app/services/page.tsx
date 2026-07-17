@@ -99,7 +99,7 @@ export default function ServicesPage() {
               <h3 className="font-[family-name:var(--font-family-headline)] text-[32px] leading-[40px] font-semibold mb-6">{service.title}</h3>
               <p className="font-[family-name:var(--font-family-body)] text-[16px] leading-[24px] text-text-muted mb-8">{service.desc}</p>
               <div className="w-full h-48 rounded-lg overflow-hidden mb-8 bg-surface-container">
-                <img className="w-full h-full object-cover card-img-zoom" alt={service.title} src={service.img} />
+                <img className="w-full h-full object-cover card-img-zoom" alt={service.title} src={service.img}  loading="lazy" />
               </div>
               <ul className="space-y-3 mb-8">
                 {service.features.map((feature, j) => (

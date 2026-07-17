@@ -94,7 +94,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="reveal reveal-delay-1 zoom-container relative aspect-square md:aspect-auto md:h-[600px] rounded-xl overflow-hidden border border-surface-stroke bg-surface-elevated">
-            <img className="w-full h-full object-cover" alt="Solar engineer inspecting system" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBazz8cRXo9_a1BSiXTAyZbEs_foq2WK74dmGXhFnTszSy7mzlPx7ix4Ki4VKhcDShBV6n5nAtctSea-MiBrsFqHT6Z4V6ea_DA_ggatIcbxLHY6wRfd_OMz4Hf36TgtadKjUmO6T5XID0HKSFGSCMDEiIO58LJCIm6Pc8dkHMuebnbsBkYqRH_TnIYNwCAr7YboTDLwKOcUI8M0GH--dfmPsqpmn6moNsaMTEENkQEvBAsFKBOaQmrJQ" />
+            <img className="w-full h-full object-cover" alt="Solar engineer inspecting system" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBazz8cRXo9_a1BSiXTAyZbEs_foq2WK74dmGXhFnTszSy7mzlPx7ix4Ki4VKhcDShBV6n5nAtctSea-MiBrsFqHT6Z4V6ea_DA_ggatIcbxLHY6wRfd_OMz4Hf36TgtadKjUmO6T5XID0HKSFGSCMDEiIO58LJCIm6Pc8dkHMuebnbsBkYqRH_TnIYNwCAr7YboTDLwKOcUI8M0GH--dfmPsqpmn6moNsaMTEENkQEvBAsFKBOaQmrJQ"  loading="lazy" />
           </div>
         </div>
       </section>
@@ -130,7 +130,7 @@ export default function AboutPage() {
                 <p className="text-on-surface-variant font-[family-name:var(--font-family-body)] text-[16px] leading-[24px]">Every installation is a step toward a greener planet, reducing carbon footprints without sacrificing luxury or comfort.</p>
               </div>
               <div className="flex-1 w-full h-48 rounded-lg overflow-hidden zoom-container">
-                <img className="w-full h-full object-cover" alt="Green leaf close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwUESPHXxhLCI_2vfF3Pv3_ORPTSIe6KnIrpZE1ri7r-nCaF2m39hG1xk6a2Z8of4mdDYZ8PYoDfz13o5hWD1A_fJVPlY3WMMbTKAex-o8DiGoD7p7Nw9GSScRK8btTfQ4VmTe6Q4UziJp7BUsrhVU1dBwI37j7lrz0nsXdcn1Aqp0QcFtT0TYepdggWul4O1FvZRhzWL7m-I1_h3qe9RfQWW-ApR34_0otAAtaTg6BjRK0HPk6Dikwg" />
+                <img className="w-full h-full object-cover" alt="Green leaf close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwUESPHXxhLCI_2vfF3Pv3_ORPTSIe6KnIrpZE1ri7r-nCaF2m39hG1xk6a2Z8of4mdDYZ8PYoDfz13o5hWD1A_fJVPlY3WMMbTKAex-o8DiGoD7p7Nw9GSScRK8btTfQ4VmTe6Q4UziJp7BUsrhVU1dBwI37j7lrz0nsXdcn1Aqp0QcFtT0TYepdggWul4O1FvZRhzWL7m-I1_h3qe9RfQWW-ApR34_0otAAtaTg6BjRK0HPk6Dikwg"  loading="lazy" />
               </div>
             </div>
           </div>
@@ -151,7 +151,7 @@ export default function AboutPage() {
           ].map((member, i) => (
             <div key={i} className={`group reveal magnetic-card ${i > 0 ? `reveal-delay-${i}` : ""}`}>
               <div className="aspect-[3/4] rounded-lg overflow-hidden bg-surface-elevated mb-2 relative border border-surface-stroke zoom-container">
-                <img className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt={member.name} src={member.img} />
+                <img className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt={member.name} src={member.img}  loading="lazy" />
               </div>
               <h4 className="font-[family-name:var(--font-family-headline)] text-[18px] leading-[28px] font-semibold text-on-surface">{member.name}</h4>
               <p className="text-solar-glow font-[family-name:var(--font-family-body)] text-[12px] leading-[16px] font-semibold uppercase tracking-wider">{member.title}</p>

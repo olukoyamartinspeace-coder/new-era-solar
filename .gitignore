@@ -7,3 +7,9 @@ out
 next-env.d.ts
 
 .vercel
+
+# build logs
+build.log
+build.out.log
+build.err.log
+deploy.log

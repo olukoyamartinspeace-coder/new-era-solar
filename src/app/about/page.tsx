@@ -46,7 +46,7 @@ export default function AboutPage() {
             className="w-full h-full bg-cover bg-center opacity-40 scale-105"
             style={{
               backgroundImage:
-                "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAdS5MDF4hBwj4HPi5SP7BXEtrBv9ur40AeE4ed4DN3_DjyQCEas1S_NMyH8OW8eXZO8n8Tkdq2DbEtV7Hiin9RxYU729DsdFAPckrcD_MUSYWC9fMpnfiSYUwJ09wgdC8Ek9A80DPKHuMqSYiMqpX-21job4bB20y68VwH-xZgBuAfdt49TavfSJ6lVRcZ6_8VKqvH7SgOM0BZE5xbDP0pYo7IN60pKL7iGs1O9l8V7HNGhoEdFaXKfA')",
+                "url('/Engineer_testing_electrical_panel_202607181030.jpeg')",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background"></div>

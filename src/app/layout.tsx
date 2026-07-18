@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RevealScript from "@/components/RevealScript";
+import LoadingScreen from "@/components/LoadingScreen";
 
 export const metadata: Metadata = {
   title: "New Era Solar World | Premium Sustainable Energy Solutions",
@@ -40,6 +41,7 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-background text-on-surface selection:bg-secondary selection:text-on-secondary overflow-x-hidden">
+        <LoadingScreen />
         <Header />
         <main>{children}</main>
         <Footer />

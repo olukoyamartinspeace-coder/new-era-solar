@@ -312,3 +312,19 @@
 .animate-pulse-glow {
   animation: pulse-glow 2s ease-in-out infinite;
 }
+
+.loading-bar {
+  width: 0%;
+  animation: loadingProgress 2.2s ease-out forwards;
+}
+@keyframes loadingProgress {
+  0% {
+    width: 0%;
+  }
+  70% {
+    width: 80%;
+  }
+  100% {
+    width: 100%;
+  }
+}

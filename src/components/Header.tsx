@@ -66,9 +66,12 @@ export default function Header() {
             Calculator
           </Link>
         </div>
-        <button className="bg-secondary text-on-secondary px-6 py-2.5 font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold rounded-lg hover:scale-105 active:scale-95 transition-all shimmer">
+        <Link
+          href="/contact"
+          className="bg-secondary text-on-secondary px-6 py-2.5 font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold rounded-lg hover:scale-105 active:scale-95 transition-all shimmer"
+        >
           Get a Quote
-        </button>
+        </Link>
       </nav>
     </header>
   );

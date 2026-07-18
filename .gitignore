@@ -15,3 +15,5 @@ build.err.log
 deploy.log
 
 preview.log
+
+optimize*.cjs

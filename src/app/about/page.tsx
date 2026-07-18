@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Link from "next/link";
 
 export default function AboutPage() {
   useEffect(() => {
@@ -46,7 +47,7 @@ export default function AboutPage() {
             className="w-full h-full bg-cover bg-center opacity-40 scale-105"
             style={{
               backgroundImage:
-                "url('/Engineer_testing_electrical_panel_202607181030.jpeg')",
+                "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAdS5MDF4hBwj4HPi5SP7BXEtrBv9ur40AeE4ed4DN3_DjyQCEas1S_NMyH8OW8eXZO8n8Tkdq2DbEtV7Hiin9RxYU729DsdFAPckrcD_MUSYWC9fMpnfiSYUwJ09wgdC8Ek9A80DPKHuMqSYiMqpX-21job4bB20y68VwH-xZgBuAfdt49TavfSJ6lVRcZ6_8VKqvH7SgOM0BZE5xbDP0pYo7IN60pKL7iGs1O9l8V7HNGhoEdFaXKfA')",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background"></div>
@@ -60,9 +61,9 @@ export default function AboutPage() {
               We are more than a solar provider. We are architects of a sustainable future, delivering reliable power solutions that redefine how the world consumes energy.
             </p>
             <div className="flex gap-6 reveal reveal-delay-2">
-              <button className="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold shimmer hover:scale-105 transition-transform active:scale-95">
+              <Link href="/about#heritage" className="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold shimmer hover:scale-105 transition-transform active:scale-95">
                 EXPLORE OUR STORY
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -94,7 +95,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="reveal reveal-delay-1 zoom-container relative aspect-square md:aspect-auto md:h-[600px] rounded-xl overflow-hidden border border-surface-stroke bg-surface-elevated">
-            <img className="w-full h-full object-cover" alt="Solar engineer inspecting system" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBazz8cRXo9_a1BSiXTAyZbEs_foq2WK74dmGXhFnTszSy7mzlPx7ix4Ki4VKhcDShBV6n5nAtctSea-MiBrsFqHT6Z4V6ea_DA_ggatIcbxLHY6wRfd_OMz4Hf36TgtadKjUmO6T5XID0HKSFGSCMDEiIO58LJCIm6Pc8dkHMuebnbsBkYqRH_TnIYNwCAr7YboTDLwKOcUI8M0GH--dfmPsqpmn6moNsaMTEENkQEvBAsFKBOaQmrJQ"  loading="lazy" />
+            <img className="w-full h-full object-cover" alt="Engineer testing electrical panel" src="/Engineer_testing_electrical_panel_202607181030.jpeg" loading="lazy" />
           </div>
         </div>
       </section>
@@ -130,7 +131,7 @@ export default function AboutPage() {
                 <p className="text-on-surface-variant font-[family-name:var(--font-family-body)] text-[16px] leading-[24px]">Every installation is a step toward a greener planet, reducing carbon footprints without sacrificing luxury or comfort.</p>
               </div>
               <div className="flex-1 w-full h-48 rounded-lg overflow-hidden zoom-container">
-                <img className="w-full h-full object-cover" alt="Green leaf close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwUESPHXxhLCI_2vfF3Pv3_ORPTSIe6KnIrpZE1ri7r-nCaF2m39hG1xk6a2Z8of4mdDYZ8PYoDfz13o5hWD1A_fJVPlY3WMMbTKAex-o8DiGoD7p7Nw9GSScRK8btTfQ4VmTe6Q4UziJp7BUsrhVU1dBwI37j7lrz0nsXdcn1Aqp0QcFtT0TYepdggWul4O1FvZRhzWL7m-I1_h3qe9RfQWW-ApR34_0otAAtaTg6BjRK0HPk6Dikwg"  loading="lazy" />
+                <img className="w-full h-full object-cover" alt="Green leaf close up" src="/optimized/about-leaf.jpg" loading="lazy" />
               </div>
             </div>
           </div>
@@ -144,10 +145,10 @@ export default function AboutPage() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { name: "Igbaro Philip", title: "Chief Systems Engineer", img: "/Screenshot_2026-07-18_233948.png_202607182357.jpeg" },
-            { name: "Amara Nwosu", title: "Lead Design Strategist", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDQ42T6SQpeGZSPh8aeM0B0uMoLt_qB-lHVA09lAhZzIIWTS4O8_wx8gHevM67XBNAuutwFdNuWqOj8C6FGyr-YqmeZ4KYNhUruiQqlD8TYJFrWgv0zMi1wUNfnJjNg7XdxC_Dr9Jx_7yGnF0C0heZP9PSiy2Lr9kVfK9JUQ8s9-s_RoXM2hBrm9dTKizs84lQriR58WTwPS458rA3CsfVKJVvcuVF2SuS6ElOunvN0eAkpvzMxhtNrdQ" },
-            { name: "Kenechukwu Obi", title: "Installation Lead", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCZEBlJ53Ls6UDhiuxlgK6vtQ5T4pAI_YkftC4beXZdXOadEjZtReBPtc12o3P7Amiwr0FTuyqxTJ0IyG3o1lRpnK2KYfTzJy50am5L1B8N2-h_4A8G-liaIJIEhLVwKFeYejPJ7MRKQ2w_CceC-Kd2tXq8usR1U_DY5xxckq3gxf3u97tWDT_l9JZ7-j6O6mxeMN6XLxXGS1wkl4dwotHkZ7MSdzmiU4YFA0jwVHmBS0STow3WiPF8BQ" },
-            { name: "Zainab Bello", title: "Client Solutions Director", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAbU6LRyWdvWn8MFyoqpflp_TtLbZ7cSLk9iPWrD_eLxrgVjW7bYd9IdtsC0raNTKSYFSvLurpitj3WmfDLI0wAvFDZs1n94mzb_g6ZxTl2cVf9_u1-0vyvR3mbuTBYboU2wc7_-lzric0sDSFZznySuuVPjvJBsXiez9U_C2MqZKCCzXZ4hhc1xuP7cdzopV9z-pB-6XGMchyM6uFlkNYgtVkO2qlYqnZOPoVrx3kg9a8hwRhaDrur6Q" },
+            { name: "Igbaro Philip", title: "Chief Systems Engineer", img: "/optimized/Screenshot_2026-07-18_233948.png_202607182357.jpg" },
+            { name: "Amara Nwosu", title: "Lead Design Strategist", img: "/optimized/team-amara.jpg" },
+            { name: "Kenechukwu Obi", title: "Installation Lead", img: "/optimized/team-kene.jpg" },
+            { name: "Zainab Bello", title: "Client Solutions Director", img: "/optimized/team-zainab.jpg" },
           ].map((member, i) => (
             <div key={i} className={`group reveal magnetic-card ${i > 0 ? `reveal-delay-${i}` : ""}`}>
               <div className="aspect-[3/4] rounded-lg overflow-hidden bg-surface-elevated mb-2 relative border border-surface-stroke zoom-container">
@@ -169,8 +170,8 @@ export default function AboutPage() {
             <h2 className="font-[family-name:var(--font-family-headline)] text-3xl md:text-[48px] leading-[56px] tracking-[-0.01em] font-bold mb-6 text-on-surface reveal">Ready for your new era?</h2>
             <p className="text-on-primary-container font-[family-name:var(--font-family-body)] text-[18px] leading-[28px] mb-12 reveal reveal-delay-1">Connect with our specialists today for a comprehensive energy audit and custom solar design proposal.</p>
             <div className="flex flex-wrap gap-6 reveal reveal-delay-2">
-              <button className="bg-solar-glow text-on-surface font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold px-8 py-4 rounded-lg hover:scale-105 transition-transform active:scale-95">SCHEDULE CONSULTATION</button>
-              <button className="border border-outline text-on-surface font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold px-8 py-4 rounded-lg hover:bg-surface-variant/20 transition-colors">VIEW PROJECTS</button>
+              <Link href="/contact" className="bg-solar-glow text-on-surface font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold px-8 py-4 rounded-lg hover:scale-105 transition-transform active:scale-95">SCHEDULE CONSULTATION</Link>
+              <Link href="/projects" className="border border-outline text-on-surface font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold px-8 py-4 rounded-lg hover:bg-surface-variant/20 transition-colors">VIEW PROJECTS</Link>
             </div>
           </div>
         </div>

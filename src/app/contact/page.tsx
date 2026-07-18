@@ -142,7 +142,7 @@ export default function ContactPage() {
           </div>
           <div className="h-full min-h-[400px] lg:min-h-full rounded-xl overflow-hidden relative border border-surface-stroke">
             <div className="absolute inset-0 bg-surface-container-highest flex items-center justify-center">
-              <div className="absolute inset-0 bg-cover bg-center grayscale contrast-125 opacity-60" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCxPKx9okr_tvl2mFsrsPgZxr7KNByWxwAX9znihnHX34VaP-Sr2Pokc8M8qna8iFPeCjJLtbqRrsJ_-tkufjv10IaSDKqlhs_DMc0Ok50LmArd19fBk68SWmCcbCg7gALTjUJEayYWwBbAKF_f39t-Mj3ZQE9jJhYFPVAQ9itaWmo1qDY5w_ZmeHwLpUqz1b-LBmnDZS5fJ_X43OgSyn_4iSfTW0TOfmu1lKo7kaayMnPicvR9dKQD2A')" }} />
+              <div className="absolute inset-0 bg-cover bg-center grayscale contrast-125 opacity-60" style={{ backgroundImage: "url('/optimized/contact-map.jpg')" }} />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
               <div className="relative z-10 flex flex-col items-center">
                 <div className="w-16 h-16 bg-solar-glow/20 rounded-full flex items-center justify-center animate-pulse mb-4">

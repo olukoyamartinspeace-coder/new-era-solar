@@ -1,41 +1,42 @@
 "use client";
 import { useEffect } from "react";
+import Link from "next/link";
 
 const services = [
   {
     num: "01", title: "Residential Solar",
     desc: "Tailored rooftop solar systems designed for maximum energy yield and seamless aesthetic integration with your home architecture.",
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDj8DEBzoIXTIhfNClWZo2C2UW2XFAqY0DBdhDKKrEzFpD4g10JauklP6qY0kuZ4g8U5Xcncv2r2QpJx0tXdLmjxpTW7V5JjgwLAuW_Wgs6x7DiSMb6cWSRS2r0SaG9N_AEfZP3avovPyHQAALAtdkEW2vDkxzU8hvwOf3MSocCg5tcERX-6dpvjb4bX9rNQJpoc09G3WapYwoKAdhAWt_sVbga4N_gcVvWOCk8ZVzU3QhAz8QF_s0Zug",
+    img: "/optimized/svc-1.jpg",
     icon: "home", features: ["24/7 Power Backup", "Energy Bill Savings"],
   },
   {
     num: "02", title: "Commercial Energy",
     desc: "Scalable energy solutions for businesses, manufacturing hubs, and corporate offices to reduce operational costs and carbon footprint.",
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAMULYbLjrkZtq8GoOBGESvVo9jpTo3M-zcgaHoN-ZaGnHqDCup7bg-SyrSHsNiYKYhRXgN7M02Ahr1rrRXq_2xGjV104Fu6eveYfKQjo7ztYiKw9jF8q_xhouud_GnhmPY4fYuVSLK3h-8CgsjqvJO_15wAa7LwpsUCb_ef59R0umBkWWK7lmaUhDkA5VuQ4SktQdw4DnMaO1B4im5iMnCX-9YV49QJrxfOm1Z6p-rs7kR7EyJibxj9Q",
+    img: "/optimized/svc-2.jpg",
     icon: "factory", features: ["Tax Incentive Support", "Smart Load Management"],
   },
   {
     num: "03", title: "Maintenance & Support",
     desc: "Dedicated after-sales service including panel cleaning, system health monitoring, and expert technical support for all installations.",
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCFzTLGd3rFKFVXhJg5kpa390thbinO1kIywlzHZ6KGZLcOedaiOICuEKeHIvXXzoiCLHbRPLf-LY81e2uRXoKR4icqFSYA_JMGeK1zfN_JSapozBzp1Il10pVLAjOu0u9Fdp9nC701V7GJGX5mWyxxASty1RmnDHPEDraHCkz3bdFQ4TwoouBERIY3xr_u3Xoxq2Cf0a6MXjF0RxQV7zAKwOEnur-a4cW28z2d4gUaespbRXdPMuEudw",
+    img: "/optimized/svc-3.jpg",
     icon: "build", features: ["Real-time Monitoring", "Annual Safety Checks"],
   },
   {
     num: "04", title: "Energy Audit",
     desc: "A data-driven assessment of your current energy usage to identify inefficiencies and recommend optimized solar configurations.",
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDxgr7nMQn0lQbNmviqisLGM9XVWc0vlebbH5XVVL2Fov1Mxw6LUTmCafrJpfzCrqIi-T-j58uy7wKSWaaxfPI-BqgAq7A-8Pjylz3YpY3ItziBJdpcJy4HPJJT8xWGKkstUAH-BKpp5GJDL4K1jlRKOiXb0ZDLxT330CLkJvugrdoBXmKQTMxhS2pCmrNYDfmn6o-HhDlMHp0w_A0jKZRd2CYqKI9fL7DLy4LokExAImFI_17yqcdbog",
+    img: "/optimized/svc-4.jpg",
     icon: "query_stats", features: ["Load Optimization", "ROI Projections"],
   },
   {
     num: "05", title: "Solar Water Pumps",
     desc: "Eco-friendly irrigation and water supply solutions for agricultural projects, utilizing high-torque solar pumping technology.",
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCXEeJiw2wupM92nVk0s4A5L4Y2KrSemQI2o0W5OZv-Kmp6zgpjcPrDl0aU6lT-um4ZhRpHgA4ye5f2stcZl12eoCGuWJs4y1_p7WX4IsMAzrHubXx1MyE4sEe7F7cn4gdM8AI2Y7W7FYdNtYfLsnTknqI4luenkENKS8AzHTpJ-k7EYn8T7VjTKUer0kxkOPuUcgiQnNKxIxgO-yS8wfFPoqcGqe5XQmJHVpVvAX3qFWmxJhOHP9b8xQ",
+    img: "/optimized/svc-5.jpg",
     icon: "water_drop", features: ["Zero Fuel Costs", "Low Maintenance"],
   },
   {
     num: "06", title: "Solar CCTV Systems",
     desc: "Uninterrupted security monitoring for remote sites using integrated solar panels and battery storage for high-definition surveillance.",
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAj6MUcJV55Nq0eg950Frd7aQPQBqUF0AlOF5O-nq3SPme9hBplbjf80HCMo71lIEWGauQcFdYO_qjdyMw3gWZmAfm_xgyijAOlzXWf_FL-IO60A9ftwGxLpAb3FePFpHLSSaCxRkwXJTI9g7eV93SOFRBUzf6Onu7wI-pmVaW2nPvv2TGI-ROzfpiD1SdIUF15Emg9v-jdZJNq48tTNalzJM2Z7Lmga6N6pZPCl1TNlJfLRF-V6CnKQg",
+    img: "/optimized/svc-6.jpg",
     icon: "security", features: ["Remote Access", "Weather Resistant"],
   },
 ];
@@ -122,8 +123,8 @@ export default function ServicesPage() {
             <p className="font-[family-name:var(--font-family-body)] text-[18px] leading-[28px] text-text-muted">Consult with our energy experts to find the perfect solar configuration for your unique needs.</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-6 w-full md:w-auto reveal reveal-delay-2">
-            <button className="shimmer-btn bg-secondary text-on-secondary font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold px-10 py-5 rounded-xl transition-all hover:scale-105 active:scale-95 shadow-lg shadow-secondary/10">Book a Consultation</button>
-            <button className="bg-surface-elevated text-on-surface border border-surface-stroke font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold px-10 py-5 rounded-xl transition-all hover:bg-surface-bright active:scale-95">Download Brochure</button>
+            <Link href="/contact" className="shimmer-btn bg-secondary text-on-secondary font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold px-10 py-5 rounded-xl transition-all hover:scale-105 active:scale-95 shadow-lg shadow-secondary/10">Book a Consultation</Link>
+            <Link href="/contact" className="bg-surface-elevated text-on-surface border border-surface-stroke font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold px-10 py-5 rounded-xl transition-all hover:bg-surface-bright active:scale-95">Download Brochure</Link>
           </div>
         </div>
       </section>

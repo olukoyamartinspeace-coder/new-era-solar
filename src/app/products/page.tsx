@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import Link from "next/link";
 
 const products = [
   {
@@ -117,12 +118,12 @@ export default function ProductsPage() {
               <p className="text-on-surface-variant font-[family-name:var(--font-family-body)] text-[16px] leading-[24px] mb-6">
                 {product.desc}
               </p>
-              <button className="text-secondary font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold flex items-center gap-2 hover:gap-4 transition-all">
+              <Link href="/contact" className="text-secondary font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold flex items-center gap-2 hover:gap-4 transition-all">
                 Request Quote{" "}
                 <span className="material-symbols-outlined text-[18px]">
                   arrow_forward
                 </span>
-              </button>
+              </Link>
             </div>
           ))}
         </div>
@@ -138,12 +139,12 @@ export default function ProductsPage() {
             your specific energy needs and budget.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
-            <button className="bg-secondary text-on-secondary px-10 py-5 rounded-xl font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold hover:scale-105 transition-all shimmer-btn">
+            <Link href="/contact" className="bg-secondary text-on-secondary px-10 py-5 rounded-xl font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold hover:scale-105 transition-all shimmer-btn">
               Speak to a Specialist
-            </button>
-            <button className="border border-surface-stroke text-on-surface px-10 py-5 rounded-xl font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold hover:bg-surface-elevated transition-all">
+            </Link>
+            <Link href="/products" className="border border-surface-stroke text-on-surface px-10 py-5 rounded-xl font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold hover:bg-surface-elevated transition-all">
               View Full Catalog
-            </button>
+            </Link>
           </div>
         </div>
       </section>

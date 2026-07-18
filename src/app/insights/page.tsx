@@ -68,9 +68,9 @@ export default function InsightsPage() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { category: "Technology", title: "The Future of Lithium Storage", desc: "New solid-state breakthroughs are promising to double energy density by 2026.", date: "June 14, 2024", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDjx6wsRxpfQPMsUt0TTYjfvLaXpW_0Wf8sQq8NJIGVB2rDmKLZL8ew637U4E3zdhPG35nsgm7fJekU3YqabiQZiScMrDToDjLh0hiN26NfmNIgcH1c86rzJJB_WxGA7lNbnBedjqmHwP9BkVVCVDxiUsMweg8NeCmN2_SaXsQYd5tqjxKAdO2SyB8s24FSdmZTo9ozzz1fxEZRB4WYtPsk70wpUTudV3f5tdxmTmvg11Qxvq90WiUWRA" },
-            { category: "Commercial", title: "Maximizing ROI on Industrial Solar", desc: "A financial deep dive into tax incentives and peak-shaving strategies.", date: "May 29, 2024", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuB5dwz-KtcSdAyHZU8bR6cbLV_6y4ECaOXANztD0J_H7Um0uQgkYsDp8FKqzEXwHstsQSgk1ab9ciyuj_S7RYywq4pMEEBnTT6SYHrg8pX9icCV8jtNVw8JfYucQDF_Z58Nr_WzGQxgmD84YCGSo33c-fnItOXQdpEDj4cVinPqDLW2QYmEFfvQjRz5sVr5_uLZjDP-fGXl-X9x_T4Hpb9wK4bx5my133fohM-qxjX5K5-6anfXjaZMA" },
-            { category: "Guides", title: "Maintenance Tips for Tier-1 Panels", desc: "Preserve your 25-year warranty with simple quarterly checkups.", date: "May 12, 2024", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAMblR3GdhVI1ZPpLa-E_jr4EZnUYFZV3pQScTU2pewdgSZ2Gob1G4YWd6U2L9wskYphbxmIJoCAwBJv4Vq_fO3k27uLfnCSmlcCBw7ZpHRuUjkFzLwx6KeLJp-dDPp9qoDEDrY20T8J64TsHsHRjfcSQxN8rKVuGE8zkkBQp3ND7iCdndLLncXehDM-JnVQRPR6VPHwYNxhNQYYgoTa9NbGQVSEwzfogRuXkdhiCCR9f01J2LzJUOtHA" },
+            { category: "Technology", title: "The Future of Lithium Storage", desc: "New solid-state breakthroughs are promising to double energy density by 2026.", date: "June 14, 2024", img: "/optimized/insight-tech.jpg" },
+            { category: "Commercial", title: "Maximizing ROI on Industrial Solar", desc: "A financial deep dive into tax incentives and peak-shaving strategies.", date: "May 29, 2024", img: "/optimized/insight-roi.jpg" },
+            { category: "Guides", title: "Maintenance Tips for Tier-1 Panels", desc: "Preserve your 25-year warranty with simple quarterly checkups.", date: "May 12, 2024", img: "/optimized/insight-maint.jpg" },
           ].map((article, i) => (
             <article key={i} className="group flex flex-col bg-surface-elevated border border-surface-stroke rounded-xl overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-secondary/5">
               <div className="h-64 overflow-hidden">
@@ -107,3 +107,4 @@ export default function InsightsPage() {
     </>
   );
 }
+

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HomePage() {
   return (
     <>
@@ -12,7 +14,7 @@ export default function HomePage() {
             className="w-full h-full bg-cover bg-center opacity-50 scale-110"
             style={{
               backgroundImage:
-                "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWs2tE7vWWJGr-MdUbIW-JzKwTjrdLiKqA2ukpM6TBcIcgFvi_lNSA2j-lCxeahHPUG3kOMgabhc4eEhz1Sik9rS0C8Gop2ATof2gJq7pRrZyDlBvbv9M-_GmjSi3RtLVelzIBWE8_2p4BkfHN0HeHRuhGuEUqMMwK9AHEoXDysOJoY0gqcq5nx7t0fOvL2TTkA7qV6w76wOkcBhgncFTY88qf60gIa19xvgqk99RP2rjKE5E_QhRFKQ')",
+                "url('/optimized/hero-home.jpg')",
             }}
           />
         </div>
@@ -43,13 +45,13 @@ export default function HomePage() {
               className="flex flex-wrap gap-4"
               style={{ animationDelay: "0.4s" }}
             >
-              <button className="bg-secondary text-on-secondary px-8 py-4 font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold rounded-xl flex items-center gap-2 hover:bg-solar-glow transition-all">
+              <Link href="/products" className="bg-secondary text-on-secondary px-8 py-4 font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold rounded-xl flex items-center gap-2 hover:bg-solar-glow transition-all">
                 Explore Products{" "}
                 <span className="material-symbols-outlined">arrow_forward</span>
-              </button>
-              <button className="border border-surface-stroke bg-surface-elevated/50 backdrop-blur-sm px-8 py-4 font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold rounded-xl hover:bg-surface-elevated transition-all">
+              </Link>
+              <Link href="/projects" className="border border-surface-stroke bg-surface-elevated/50 backdrop-blur-sm px-8 py-4 font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold rounded-xl hover:bg-surface-elevated transition-all">
                 Our Portfolio
-              </button>
+              </Link>
             </div>
             <div
               className="mt-16 flex flex-wrap gap-12"
@@ -153,7 +155,7 @@ export default function HomePage() {
               <img
                 alt="Solar Installation Professional"
                 className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg8JLqFRp-NvOcKCe6ES2PAPGqrbLUygE7Wgqi3Xc2SgH9HTSJ55gBvifFpEtAxe9I8apTQXUpeQtL04cE-IcIU90qoCgsoJ0CSy_ZUmShdCtii8_KwkKVQGyt3-749WLue1-SOtp2KnZx7VYHL1iPYQybeU3U2LQoPV8ee8T2O9dPnmH8M0V9odtket6fGSaCOcJw_CC87LUKcALBvR_OPfIj_gvhHpYQ52luaVa5Gs4BS0Suia1nLw" loading="lazy" />
+                src="/optimized/about-intro.jpg" loading="lazy" />
               <div className="absolute bottom-6 left-6 bg-background/90 backdrop-blur-md p-6 rounded-xl border border-surface-stroke max-w-[240px]">
                 <p className="text-secondary font-[family-name:var(--font-family-headline)] text-[48px] mb-1">
                   10+
@@ -320,7 +322,7 @@ export default function HomePage() {
             <img
               alt="Skyview Estate Solar"
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtM6IbdxWyCoc3nXQ7C06sVlbhATw36A4X8BBlvwT2eziYwbwoZYojX04dVkpeN-eBcAzRPQ9GlySYED1zqh7y9L3UtcUn8PNshGjzDZXfmjRHqjLQZEmW2dO4-asH7PSDKBeHLrRkdd8_rMYshfC-0OXOxhM9UyIch7YAdA5HhwlFio14urNtTHhD8Xl4ZWc8bbAvTwe7W4GmQrOz0t9Wf5ybyUmigjp14Ges07788aBRNQrOv9XbJw" loading="lazy" />
+              src="/optimized/proj-skyview.jpg" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-8 flex flex-col justify-end">
               <span className="text-secondary text-[14px] leading-[20px] tracking-[0.05em] font-semibold mb-2">
                 Luxury Residential
@@ -334,7 +336,7 @@ export default function HomePage() {
             <img
               alt="Industrial Solar Hub"
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx6fDh_4xBvBf1HfsIvHRMzfoQgrTHCLOOY8W-SNVUGJxWFToRLI6OXLIdbTIZBc801RVmNTp8vo1aDt3a2_cRLB8ZN8oaOxGzoH_7nMW675dfMDcb4FUgOlFDI3O9QpkRw57zNwEXVwJeLi2-p1FRiZIHlGLPaz76K7qTUDjvNVCAC2hAOMNBBH7aU05r9D4XCI2ZpI4b_RIT7JB4eAhpud8TAGIfUiqOEe_V4AyOE6JeeSqlYhbaVw" loading="lazy" />
+              src="/optimized/proj-industrial.jpg" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-8 flex flex-col justify-end">
               <span className="text-secondary text-[14px] leading-[20px] tracking-[0.05em] font-semibold mb-2">
                 Commercial
@@ -348,7 +350,7 @@ export default function HomePage() {
             <img
               alt="Hybrid Carport"
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwwPM-_akic0ik08p1ucyMk1Yg0A8jewsGgpvT4tU0eBNqvYa9PDcU6ZGKJyOl9JTIkQaab6Gv15JW_GCD9PR0i1H2N3DIGZ-DvhT6j2SP_sRXoDggKLYcqwikqP2Z9gcmXoXAuXTwjTCFnviedwwu4sfDzAL-zy2fp7EzFWIzA4R9tfKj-TD8NP8pJia45Sm7xckaa3-qBjWr8f5b30P81LJnjIWQEftgRwM7woV0ilxTSnU1U0cSAg" loading="lazy" />
+              src="/optimized/proj-carport.jpg" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-end">
               <span className="text-secondary text-[14px] leading-[20px] tracking-[0.05em] font-semibold mb-1 text-sm">
                 Smart Charging
@@ -360,7 +362,7 @@ export default function HomePage() {
             <img
               alt="Lithium Bank"
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9adhIpeRa5fJTZtE90ykm91ZS71C2y2sMiuScT4csvxeWtG0K5WrZcuid5pwfwJ6QOYMKKAGFjWQUDK1JqRdVDgd_eDnp1hfnQlao0BPQB42Qoo0dNxjpAAxUuOclomLhjQMQ3DtKGb5aJO-1XseQ8q9zxQNltHEFwGH-UiOXxFH-hvywd9KUGiUr5wvp8RY5T3CjjzcArsRqEAIeJIJfXU7tNT0T3Ybbcsak8AgsrwdzeFgVgC4Z0g" loading="lazy" />
+              src="/optimized/proj-lithium.jpg" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-end">
               <span className="text-secondary text-[14px] leading-[20px] tracking-[0.05em] font-semibold mb-1 text-sm">
                 Off-Grid
@@ -456,14 +458,14 @@ export default function HomePage() {
             save with our custom solar solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
-            <button className="bg-primary-container text-on-primary-container px-10 py-5 rounded-2xl font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold hover:bg-on-primary-fixed transition-all flex items-center justify-center gap-2 magnetic-card">
+            <Link href="/contact" className="bg-primary-container text-on-primary-container px-10 py-5 rounded-2xl font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold hover:bg-on-primary-fixed transition-all flex items-center justify-center gap-2 magnetic-card">
               Get Your Free Quote{" "}
               <span className="material-symbols-outlined">description</span>
-            </button>
-            <button className="border-2 border-primary-container text-primary-container px-10 py-5 rounded-2xl font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2 magnetic-card">
+            </Link>
+            <a href="tel:07075143322" className="border-2 border-primary-container text-primary-container px-10 py-5 rounded-2xl font-[family-name:var(--font-family-body)] text-[14px] leading-[20px] tracking-[0.05em] font-semibold hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2 magnetic-card">
               Speak to an Expert{" "}
               <span className="material-symbols-outlined">call</span>
-            </button>
+            </a>
           </div>
         </div>
       </section>

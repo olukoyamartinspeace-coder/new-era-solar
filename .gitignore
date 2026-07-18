@@ -13,3 +13,5 @@ build.log
 build.out.log
 build.err.log
 deploy.log
+
+preview.log

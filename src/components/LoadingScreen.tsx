@@ -8,8 +8,19 @@ export default function LoadingScreen() {
   useEffect(() => {
     const MIN_DURATION = 2200;
     const start = Date.now();
-    let assetsReady = document.readyState === "complete";
 
+    const finish = () => {
+      setFade(true);
+      setTimeout(() => setHidden(true), 700);
+    };
+
+    if (typeof window !== "undefined" && window.__neswLoaded) {
+      setHidden(true);
+      return;
+    }
+    window.__neswLoaded = true;
+
+    let assetsReady = document.readyState === "complete";
     const onLoad = () => {
       assetsReady = true;
     };
@@ -17,18 +28,11 @@ export default function LoadingScreen() {
       window.addEventListener("load", onLoad);
     }
 
-    const tryFinish = () => {
-      const elapsed = Date.now() - start;
-      if (assetsReady && elapsed >= MIN_DURATION) {
-        setFade(true);
-        setTimeout(() => setHidden(true), 700);
-        return true;
-      }
-      return false;
-    };
-
     const interval = setInterval(() => {
-      if (tryFinish()) clearInterval(interval);
+      if (assetsReady && Date.now() - start >= MIN_DURATION) {
+        clearInterval(interval);
+        finish();
+      }
     }, 100);
 
     return () => {

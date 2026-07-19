@@ -57,6 +57,40 @@
   --font-family-body: Inter, sans-serif;
 }
 
+:root.light {
+  --color-background: #f6f7f9;
+  --color-on-background: #1a1c1e;
+  --color-surface: #ffffff;
+  --color-surface-dim: #ededf0;
+  --color-surface-bright: #ffffff;
+  --color-surface-container: #eceef1;
+  --color-surface-container-low: #f3f4f6;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-high: #e3e6ea;
+  --color-surface-container-highest: #dadee3;
+  --color-surface-variant: #e4e7ec;
+  --color-surface-elevated: #ffffff;
+  --color-surface-stroke: #d6dae0;
+  --color-inverse-surface: #2a2c2e;
+  --color-inverse-on-surface: #f0f0f0;
+  --color-on-surface: #1a1c1e;
+  --color-on-surface-variant: #4a4f57;
+  --color-text-muted: #5b626c;
+  --color-outline: #c2c7ce;
+  --color-outline-variant: #d6dae0;
+  --color-primary: #384760;
+  --color-primary-container: #e6ecf6;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #2a3346;
+  --color-secondary: #b88600;
+  --color-secondary-container: #ffe9a8;
+  --color-on-secondary: #3a2a00;
+  --color-on-secondary-container: #5e4200;
+  --color-tertiary: #9a4a12;
+  --color-on-tertiary: #ffffff;
+  --color-inverse-primary: #b9c2da;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;

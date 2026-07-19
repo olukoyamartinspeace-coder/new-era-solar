@@ -17,3 +17,5 @@ deploy.log
 preview.log
 
 optimize*.cjs
+
+optimize_proj.cjs

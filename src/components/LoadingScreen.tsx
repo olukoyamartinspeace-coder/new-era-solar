@@ -1,6 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 
+let hasShown = false;
+
 export default function LoadingScreen() {
   const [hidden, setHidden] = useState(false);
   const [fade, setFade] = useState(false);
@@ -14,11 +16,21 @@ export default function LoadingScreen() {
       setTimeout(() => setHidden(true), 700);
     };
 
-    if (typeof window !== "undefined" && window.__neswLoaded) {
+    let already;
+    try {
+      already = hasShown || window.__neswLoaded || sessionStorage.getItem("neswLoaded") === "1";
+    } catch (e) {
+      already = hasShown || window.__neswLoaded;
+    }
+    if (already) {
       setHidden(true);
       return;
     }
+    hasShown = true;
     window.__neswLoaded = true;
+    try {
+      sessionStorage.setItem("neswLoaded", "1");
+    } catch (e) {}
 
     let assetsReady = document.readyState === "complete";
     const onLoad = () => {

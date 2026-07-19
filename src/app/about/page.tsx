@@ -143,21 +143,14 @@ export default function AboutPage() {
           <h2 className="font-[family-name:var(--font-family-headline)] text-3xl md:text-[48px] leading-[56px] tracking-[-0.01em] font-bold mb-2">The Specialists</h2>
           <p className="text-on-surface-variant font-[family-name:var(--font-family-body)] text-[18px] leading-[28px]">A multidisciplinary team of engineers, designers, and solar strategists.</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[
-            { name: "Igbaro Philip", title: "Chief Systems Engineer", img: "/optimized/Screenshot_2026-07-18_233948.png_202607182357.jpg" },
-            { name: "Amara Nwosu", title: "Lead Design Strategist", img: "/optimized/team-amara.jpg" },
-            { name: "Kenechukwu Obi", title: "Installation Lead", img: "/optimized/team-kene.jpg" },
-            { name: "Zainab Bello", title: "Client Solutions Director", img: "/optimized/team-zainab.jpg" },
-          ].map((member, i) => (
-            <div key={i} className={`group reveal magnetic-card ${i > 0 ? `reveal-delay-${i}` : ""}`}>
-              <div className="aspect-[3/4] rounded-lg overflow-hidden bg-surface-elevated mb-2 relative border border-surface-stroke zoom-container">
-                <img className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt={member.name} src={member.img}  loading="lazy" />
-              </div>
-              <h4 className="font-[family-name:var(--font-family-headline)] text-[18px] leading-[28px] font-semibold text-on-surface">{member.name}</h4>
-              <p className="text-solar-glow font-[family-name:var(--font-family-body)] text-[12px] leading-[16px] font-semibold uppercase tracking-wider">{member.title}</p>
+        <div className="flex justify-center">
+          <div className="group reveal magnetic-card max-w-[320px] w-full">
+            <div className="aspect-[3/4] rounded-lg overflow-hidden bg-surface-elevated mb-2 relative border border-surface-stroke zoom-container">
+              <img className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Igbaro Philip" src="/optimized/Screenshot_2026-07-18_233948.png_202607182357.jpg"  loading="lazy" />
             </div>
-          ))}
+            <h4 className="font-[family-name:var(--font-family-headline)] text-[18px] leading-[28px] font-semibold text-on-surface">Igbaro Philip</h4>
+            <p className="text-solar-glow font-[family-name:var(--font-family-body)] text-[12px] leading-[16px] font-semibold uppercase tracking-wider">Chief Systems Engineer</p>
+          </div>
         </div>
       </section>
 
